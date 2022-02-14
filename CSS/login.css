@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.hero{
+    background-image: url('./hi.jpg');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.menu-bar{
+    background-color: #132a6f;
+    text-align: center;
+  
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: aliceblue;
+}
+.menu-bar ul li{
+    width: 100px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+:active,.menu-bar ul li:hover{
+    background: #FFA500;
+    border-radius: 3px;
+}
+.menu-bar ul h1{
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+.menu-bar ul{
+    margin-left: 45%;
+}
+.menu-bar ul li{
+    font-size: 19px;
+}
+.menu-bar .fa
+{
+    margin-right: 8px;
+}
+.sub-menu-1{
+
+    display: none;
+}
+.sub-menu-1 ul li{
+    font-size: 14px;
+ 
+    
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    
+    display: block;
+    position: absolute;
+    background: midnightblue;
+    margin-top: 15px;
+    margin-left: -15px;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color:#4b74e7;
+}
+.fa-caret-right{
+    float: right;
+}
+.sub-menu-2{
+    display: none;
+
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 110px;
+    background: midnightblue;
+}
+
+
+
+
+
+
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: rgba(255, 255, 255, 0.226);
+    padding: 5px;
+    overflow: hidden;
+}
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    transition: .5s;
+}
+.input-group{
+    top: 120px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 0 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 50px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+#login{
+    left: 50px;
+}
+#register{
+    left: 50px;
+    margin-top: -120px;
+}
+
+::placeholder{
+    color: white;
+}
+.input_section{
+    display: flex;
+}
+.floatleft{
+    margin-left: 386px;
+}
+.floatright{
+    margin-left: 600px;
+    margin-top: -4px;
+}
+
+#btn_reg{
+    position: absolute;
+    top: 420px;
+    left: 500px;
+    transition: .5s;
+}

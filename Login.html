@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monaco Airport</title>
+    
+    <link rel="stylesheet" href="/all.min.css">
+    <link rel="shortcut icon" type="image" href="plan2.svg">
+    <link rel="stylesheet" href="CSS/login.css">
+
+</head>
+<body> 
+    <div class="hero">
+    <div class="menu-bar"> 
+ 
+   <ul>
+    <h1><i class="fas fa-paper-plane"></i> Monaco Airport </h1>
+    
+       <li class="active nav-bar"><a href="index.html"> HOME </a>
+            
+   </ul>
+</ul>
+</div> 
+
+
+
+<div class="form-box" id="formbox">
+    <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+        <button type="button" class="toggle-btn" onclick="register()">Register</button>
+    </div>
+    <form id="login" class="input-group" action="userprocess.php" method="POST">
+        <p>Email</p>
+        <input type="text" name="mailuid" class="input-field" placeholder="Enter Email Address" required="required">
+        <p>Password</p>
+        <input type="password" name="pwd" class="input-field" placeholder="Enter Password" required="required">
+        <br><br><br><br><br>
+        <button type="submit" class="submit-btn">Log In</button>
+    </form>
+    
+    
+    <form id="register" class="input-group" action="registrationproccess.php" method="POST">
+    <div class="input_section">
+        <div id="beauty1" class="floatleft input_info input-group">
+            <p >Name</p>
+            <input type="text" name="fullname" class="input-field" placeholder="Enter Your Name" required="required">
+            <p>Email</p>
+            <input type="email" name="mailuid" class="input-field" placeholder="Enter Your Email" required="required">
+            <p>Password</p>
+            <input type="password" name="pwd" class="input-field" placeholder="Enter Password" required="required">
+        </div>
+        <div id="beauty2" class="floatright input_info input-group">
+            <p>Date of Birth</p>
+            <input type="date" name="dateofbirth" class="input-field" placeholder="Enter Your Age" required="required">
+            <p>NID</p>
+            <input type="text" name="NID" class="input-field" placeholder="Enter Your NID Number" required="required">
+            <p>Passport</p>
+            <input type="text" name="Passport" class="input-field" placeholder="Enter Your Passport Number" required="required">
+        </div>
+        <button type="submit" id="btn_reg" class="submit-btn">Register</button>
+    </div>
+</form>
+</div>
+<script>
+var x = document.getElementById("login");
+var y = document.getElementById("register");
+var z = document.getElementById("btn");
+var w = document.getElementById("formbox");
+var v = document.getElementById("beauty1");
+var u = document.getElementById("beauty2");
+var s = document.getElementById("btn_reg");
+
+function register(){
+    x.style.left = "-400px";
+    y.style.left = "50px";
+    z.style.left = "105px";
+    w.style.width = "700px";
+    v.style.left = "-380px";
+    u.style.left = "-270px";
+    s.style.left = "200px";
+}
+function login(){
+    x.style.left = "50px";
+    y.style.left = "50px";
+    z.style.left = "0px";
+    w.style.width = "380px";
+    v.style.left = "0px";
+    u.style.left = "0px";
+    s.style.left = "500px";
+}
+</script>
+</div>
+  
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Booking Fligth Ticket</title>
+		<link rel="stylesheet" href="ticketbook.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	</head>
+	<body>
+		<div class="booking-form-box">
+			<form action="Ticket_Book.php" method="POST">
+
+		<div class="radio-btn">
+			<input type="radio" class="btn" name="Ch" checked="Checked" value="Round Trip">
+				<span>Round Trip</span>
+			<input type="radio" class="btn" name="Ch" value="One Way"><span>One Way</span>
+			<input type="radio" class="btn" name="Ch" value="Multiple City"><span>Multiple City</span>
+		</div>
+		<div class="booking-form">
+			<label>
+				Flying From
+			</label>
+			<select class="form-control" name="FF">
+				<option >
+					Monaco
+				</option>
+				</select>
+			<label>
+				Flying To
+			</label>
+		<select class="form-control" name="FT">
+			<option >
+				Bangladesh
+			</option>
+			<option >
+				USA
+			</option>
+			<option >
+				UAE
+			</option>
+			<option >
+				SAUDI
+			</option>
+			<option >
+				India
+			</option>
+		</select>
+		<div class="input-grp">
+			<label>
+				departing
+			</label>
+				<input type="date" name="DD" class="form-control select-date" placeholder="Date">
+		</div>
+		<div class="input-grp">
+			<label>
+				Returning
+			</label>
+				<input type="date" name="RD" class="form-control select-date" placeholder="R date">
+		</div>
+		<div class="input-grp">
+			<label>
+				Adults
+			</label>
+				<input type="number" name="AD" class="form-control" value= "1" placeholder="adults">
+		</div>
+		<div class="input-grp">
+			<label>
+				Children
+			</label>
+				<input type="number" name="CH" class="form-control" value= "0"
+				placeholder="children">
+		</div>
+		<div class="input-grp">
+			<label>
+				Travel Class
+				
+			</label>
+				<select class="custom-select" name="TC">
+					<option >
+						Economy  Class
+					</option>
+					<option>
+						Business  Class
+					</option>
+				</select>
+		</div>
+		<div class="input-grp">
+			<button >
+				Show Fligths
+			</button>
+		</div>
+		</div>
+			</form>
+		</div>
+	</body>
+</html>
